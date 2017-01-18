@@ -1,4 +1,4 @@
-package nonamedata
+package domain
 
 type Form struct {
 	Domain string
