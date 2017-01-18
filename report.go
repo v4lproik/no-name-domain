@@ -1,7 +1,7 @@
 package domain
 
 type Report struct {
-	Id int
+	Id string
 	Type string
 
 	Form Form
