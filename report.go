@@ -2,11 +2,11 @@ package domain
 
 type Report struct {
 	Id string
-	Type string
+	TypeEnum string
 
-	Form Form
+	Form *Form
 }
 
-func NewReport() (r *Report) {
-	return &Report{"", NewForm()}
+func NewReport(id string, typeEnum string, form *Form) (r *Report) {
+	return &Report{id, typeEnum, form}
 }
