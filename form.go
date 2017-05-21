@@ -8,6 +8,7 @@ type Form struct {
 	UsernameArg string
 	PasswordArg string
 	SubmitArg string
+	CsrfArg string
 	OtherArgWithValue map[string]string
 	MethodSubmitArg string
 
@@ -19,5 +20,5 @@ type Form struct {
 }
 
 func NewForm() (f *Form) {
-	return &Form{"", "", "", "", "", "", make(map[string]string), "", "", "", "", ""}
+	return &Form{"", "", "", "", "", "", "", make(map[string]string), "", "", "", "", ""}
 }
