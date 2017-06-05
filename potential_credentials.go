@@ -8,9 +8,19 @@ const (
 	SourceText
 )
 
+var sourceName = []string{
+	SourceBruteforce:    "BRUTEFORCE",
+	SourceFavicon: "FAVICON",
+	SourceText:   "TEXT",
+}
+
 type PotentialCredentials struct {
 	Username string
 	Password string
 
 	Source Source
+}
+
+func (s Source) String() string {
+	return sourceName[s]
 }
