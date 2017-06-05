@@ -17,10 +17,9 @@ type Form struct {
 	FaviconMD5Hash string
 	FaviconPath string
 
-	PotentialUsername string
-	PotentialPassword string
+	PotentialCredentials []PotentialCredentials
 }
 
 func NewForm() (f *Form) {
-	return &Form{"", "", "","", "", "", "", "", make(map[string]string), "", "", "", "", ""}
+	return &Form{"", "", "","", "", "", "", "", make(map[string]string), "", "", "", make([]PotentialCredentials, 10)}
 }
